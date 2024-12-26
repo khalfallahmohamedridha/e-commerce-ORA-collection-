@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORA COLLECTION</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="d-flex flex-wrap justify-content-center py-2 bg-black fixed-top"
+    >
+      <a
+        href="index.html"
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <img
+          src="assets/images/logo.jpg"
+          alt="Clothing Store Logo"
+          style="height: 4.5rem"
+        />
+      </a>
+
+      <ul class="nav nav-pills align-items-center">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="nav-link"
+          >
+            Cart
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/Carousel/1.jpg" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/Carousel/2.jpg" alt="" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/Carousel/3.jpg" alt="" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="album py-3 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!-- Product 1 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/1.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">Burgundy Short Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">80 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="Burgundy Short Jacket"
+                  data-price="80 DT"
+                  data-image="assets/images/Products/1.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 1 -->
+
+          <!-- Product 2 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/2.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">Burgundy Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">100 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="Burgundy Jacket"
+                  data-price="100 DT"
+                  data-image="assets/images/Products/2.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+
+          <!-- Product 3 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/3.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">Rider Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">100 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="Rider Jacket"
+                  data-price="100 DT"
+                  data-image="assets/images/Products/3.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+
+          <!-- Product 4 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/4.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">Moto Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">140 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="Moto Jacket"
+                  data-price="140 DT"
+                  data-image="assets/images/Products/4.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+
+          <!-- Product 5 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/5.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">White Zipper Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">120 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="White Zipper Jacket"
+                  data-price="120 DT"
+                  data-image="assets/images/Products/5.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5 -->
+
+          <!-- Product 6 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                class="product-image"
+                src="assets/images/Products/6.jpg"
+                alt=""
+              />
+              <div class="card-body text-center py-1 my-0">
+                <p class="fs-4 m-0 p-0 fw-medium">Black Short Jacket</p>
+                <div class="d-flex justify-content-center">
+                  <p
+                    class="fs-7 m-0 p-0 fw-light py-1"
+                    style="width: 70% !important"
+                  >
+                    Stay warm and stylish with this soft, cozy scarf—perfect for
+                    chilly days!
+                  </p>
+                </div>
+                <p class="fs-4 m-0 p-0 fw-medium pb-1">80 DT</p>
+              </div>
+              <div
+                class="container bg-black text-center"
+                style="
+                  border-bottom-left-radius: 25px;
+                  border-bottom-right-radius: 25px;
+                "
+              >
+                <button
+                  class="text-white fs-6 fw-medium m-0 p-2 mb-1 add-to-cart"
+                  data-title="Black Short Jacket"
+                  data-price="80 DT"
+                  data-image="assets/images/Products/6.jpg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">My Cart</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+
+          <div class="modal-footer" style="justify-content: center"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Checkout</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form wrapper -->
+            <form id="checkoutForm" class="row g-2">
+              <!-- First Name -->
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault01"
+                  required
+                />
+              </div>
+              <!-- Last Name -->
+              <div class="col-md-6">
+                <label for="validationDefault02" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault02"
+                  required
+                />
+              </div>
+              <!-- Phone Number -->
+              <div class="col-md-12">
+                <label for="validationDefaultUsername" class="form-label"
+                  >Phone Number</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telephone"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefaultUsername"
+                    aria-describedby="inputGroupPrepend2"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="col-md-12">
+                <label for="validationDefaultUsername" class="form-label"
+                  >Email</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2"
+                    >@</span
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationDefaultEmail"
+                    aria-describedby="inputGroupPrepend2"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Address -->
+              <div class="col-md-12">
+                <label for="validationDefaultUsername" class="form-label"
+                  >Address</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-geo-alt"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                      />
+                      <path
+                        d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefaultAddress"
+                    aria-describedby="inputGroupPrepend2"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="confirmCheckoutButton"
+            >
+              Confirm Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-black">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start"
+          >
+            <div class="social">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                Social
+              </h6>
+              <ul class="list-inline my-4">
+                <li class="list-inline-item">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-danger btn-sm btn btn-light mb-2"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://codepen.io/Gaurav-Rana-the-reactor"
+                    class="text-white btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start"
+          >
+            <div class="contact">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                Contact Us
+              </h6>
+              <address class="mt-4 m-0 text-white mb-1">
+                <i class="bi bi-pin-map fw-semibold"></i> Tunisia-Sfax
+              </address>
+              <a
+                href="tel:+"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-telephone"></i> +216 93 333 481</a
+              >
+              <a
+                href="e-mail:"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-envelope"></i> ora.collection1@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center bg-dark text-white mt-4 p-1">
+        <p class="mb-0 fw-bold">2024 © ORA COLLECTION, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
